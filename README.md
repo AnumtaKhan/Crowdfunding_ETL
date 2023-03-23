@@ -38,11 +38,11 @@ There are four technical products with the submission of the following deliverab
 ## Method
 
 
-    **For Part 1-2:** Extract the crowdfunding data from the crowdfunding.xlsx file using Pandas to read the excel file. Convert into a DataFrame and obtain a brief summary. 
+For Part 1-2: Extract the crowdfunding data from the crowdfunding.xlsx file using Pandas to read the excel file. Convert into a DataFrame and obtain a brief summary. 
 
-    **For Part 3:** Extract the contacts data from the contacts.xlsx file using Pandas to read the excel file. Convert into a DataFrame. 
+For Part 3: Extract the contacts data from the contacts.xlsx file using Pandas to read the excel file. Convert into a DataFrame. 
 
-    **For Part 4:**
+For Part 4: Sketch ERD of tables from CSV files. Create database schema as Postgres file named `crowdfunding_db_schema.sql` and create new Postgres database named `crowdfunding_db`.
 
 
 
@@ -110,6 +110,13 @@ Then export the DataFrame as a `contacts.csv` CSV file. This file is found withi
 ## Part 4: Create Crowdfunding DataFrame
 
 
+Sketch ERD of tables from CSV files using QuickDBD.
+
+Create database schema as Postgres file named `crowdfunding_db_schema.sql` and create new Postgres database named `crowdfunding_db`.
+- Using the database schema, create tables in the correct to handle the foreign keys.
+- Verify the table creation by running a SELECT statement for each table.
+- Import each CSV file into its corresponding SQL table.
+- Verify that each table has the correct data by running a SELECT statement for each.
 
 
 
