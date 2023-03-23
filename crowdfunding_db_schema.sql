@@ -9,6 +9,24 @@ ALTER DATABASE "crowdfunding_db" SET datestyle TO "ISO, MDY";
 
 
 -- Create all the tables
+CREATE TABLE subcategory (
+  subcategory_id VARCHAR(25) NOT NULL,
+  subcategory VARCHAR(25) NOT NULL,
+  primary key(subcategory_id)
+);
+
+select * from subcategory;
+
+
+CREATE TABLE category (
+  category_id VARCHAR(5) NOT NULL,
+  category VARCHAR(25) NOT NULL,
+  primary key(category_id)
+);
+
+select * from category;
+
+
 CREATE TABLE campaign (
   cf_id INT NOT NULL,
   contact_id INT NOT NULL,
@@ -32,15 +50,6 @@ CREATE TABLE campaign (
 select * from campaign;
 
 
-CREATE TABLE category (
-  category_id VARCHAR(5) NOT NULL,
-  category VARCHAR(25) NOT NULL,
-  primary key(category_id)
-);
-
-select * from category;
-
-
 CREATE TABLE contacts (
   contact_id INT NOT NULL,
   first_name VARCHAR NOT NULL,
@@ -49,12 +58,3 @@ CREATE TABLE contacts (
 );
 
 select * from contacts;
-
-
-CREATE TABLE subcategory (
-  subcategory VARCHAR(25) NOT NULL,
-  subcategory_id VARCHAR(25) NOT NULL,
-  primary key(subcategory_id)
-);
-
-select * from subcategory;
